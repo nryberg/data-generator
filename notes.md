@@ -1,6 +1,6 @@
-10/26/2016  The ABC's of data
+## The ABC's of data
 
-* Apples and Oranges
+* [Apples and Oranges](./Samples/Apples_and_Oranges/fruit.csv)
 * Bike Rentals
 * Cats and Dogs
 * D
@@ -10,14 +10,14 @@
 * H
 * I
 * J
-* K
+* Kangaroos in Australia
 * M
 * N
 * O
-* P
+* Plane Trips
 * Q
 * R
-* S
+* Ships at sea
 * T
 * U
 * V
@@ -26,22 +26,25 @@
 * Y
 * Z
 
-== Basic structure of data generation ==
+### Basic structure of data generation
 Combining random values within a limits.  Quantities are limited, possible items are limited.  Building out those limitations is the hard part - can you do it in a way that's easy to maintain?
 
 Make a pattern that's reasonably predictable:
 
 Dimensions -
+
 * Index Number - 1, 2, 3, 4, 5 -
 * Name - Simple Text - Apple, Orange, Banana
 * Category - Something to group by
 * Value - something to multiply by
 *
+
 Fact - only one
+
 * Date - within limits - varying atomicity
 * Dimension One Index
 * Dimension One Value - quantity
 * Dimension Two Index
 
-== General Feel ==
+### General Feel
 Should _feel_ like real data, but not really - has to straddle the line.  Setting the params is the hardest part.
