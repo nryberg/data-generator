@@ -1,0 +1,15 @@
+- fruit: 
+  name: banana
+  weight: 2
+  measure: weight
+  price: 14.00
+  gross_weight: 40
+- fruit: 
+  name: apple
+  weight: 0.33
+  measure: count
+  price: 22.00
+  count: 56
+- vendor:
+  vname: Mikes Fruit Stand
+    

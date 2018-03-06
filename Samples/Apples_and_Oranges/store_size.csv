@@ -1,0 +1,5 @@
+Size,Description,Customer_Low,Customer_High
+Small,Corner Store,300,3300
+Medium,Rural Grocery,1200,5000
+Large,Urban Grocery,4500,12000
+Gigantic,Suburban Big Box,10000,45000
