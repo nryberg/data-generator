@@ -7,11 +7,11 @@
 * E
 * Finance
 * G
-* H
+* Hotels
 * I
 * J
 * Kangaroos in Australia
-* M
+* Margaritas and beers
 * N
 * O
 * Plane Trips
@@ -33,11 +33,16 @@ Make a pattern that's reasonably predictable:
 
 Dimensions -
 
+* Two Dimensions preferably
 * Index Number - 1, 2, 3, 4, 5 -
 * Name - Simple Text - Apple, Orange, Banana
 * Category - Something to group by
 * Value - something to multiply by
-*
+
+A related Dimension - 
+
+* Just one 
+* Tied to the category of the first dimension
 
 Fact - only one
 
