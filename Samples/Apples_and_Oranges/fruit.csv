@@ -1,6 +1,11 @@
-Fruit_ID,name,type,gross_price,retail_price
-1,Banana,berry,.35,.425
-2,Apple,pome,.66,.77
-3,Grape,berry,1.31,1.47
-4,Coconut,drupe,.52,.55
-5,Orange,rind,.55,.57
+fruit,color,retail_price
+Banana,yellow,.425
+Apple,red,.77
+Grape,red,1.47
+Coconut,brown,.55
+Orange,orange,.57
+Blackcherry,black,.23
+Lemon,yellow,.60
+Strawberry,red,.12
+Lime,green,.46
+Pear,yellow,.65

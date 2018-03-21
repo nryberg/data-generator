@@ -1,8 +1,8 @@
-Store_ID,Name,Size,Low_Volume,High_Volume
-1,Mike's Fruit Stand,Small,10,250
-2,Cloud 9,Gigantic,1000,5000
-3,Mary's Market,Medium,500,750
-4,Spot Coop,Medium,2000,3000
-5,Gas and More,Small,25,90
-6,Food Warehouse,Gigantic,4000,12000
-7,Pops Shop,Small,50,70
+Store,Location,Sales
+Mike's Fruit Stand,Rural,25000
+Cloud 9,Suburb,500000
+Mary's Market,City,80000
+Spot Coop,City,750000
+Gas and More,Rural,12000
+Food Warehouse,Suburb,1200000
+Pops Shop,City,70000
