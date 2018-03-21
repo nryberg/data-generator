@@ -8,7 +8,7 @@
 * Finance
 * G
 * Hotels
-* I
+* I g
 * J
 * Kangaroos in Australia
 * Margaritas and beers
