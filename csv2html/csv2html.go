@@ -17,37 +17,41 @@ func check(e error) {
 		panic(e)
 	}
 }
+
 // TODO: Add flags rather than
 // position based arguments
 // TODO: Add Style
 // 			 Add markdown format
 
 func main() {
-	var file_in, file_out string
+	var fileIn, fileOut string
 	args := os.Args[1:]
-	num_args := len(args)
-	fmt.Println(num_args)
-	switch num_args {
-		case 1: file_in = args[0]
-		case 2:
-			file_in = args[0]
-			file_out = args[1]
+	numArgs := len(args)
+	fmt.Println(numArgs)
+	switch numArgs {
+	case 1:
+		fileIn = args[0]
+	case 2:
+		fileIn = args[0]
+		fileOut = args[1]
 	}
 
-	// path := path.Base(file_in)
+	working := "<head><link rel='stylesheet' type='text/css' href='./css/dist/milligram.min.css'></head>\n"
+	working += "<body>\n"
+	// path := path.Base(fileIn)
 
 	// file_chunks := strings.Split(path, ".")
-	// file_out := file_chunks[0] + ".html"
+	// fileOut := file_chunks[0] + ".html"
 	// fmt.Println(file_chunks)
 
-	f, err := os.Open(file_in)
+	f, err := os.Open(fileIn)
 	check(err)
 	r := csv.NewReader(bufio.NewReader(f))
-	row_num := 1
-	working := "<table>\n"
+	rowNum := 1
+	working += "<table>\n"
 	for {
 		record, err := r.Read()
-		if row_num == 1 {
+		if rowNum == 1 {
 			working += "<th>"
 			for _, v := range record {
 				working += "<td>" + v + "</td>\n"
@@ -60,7 +64,7 @@ func main() {
 			}
 			working += "</tr>"
 		}
-		row_num += 1
+		rowNum++
 
 		if err == io.EOF {
 			break
@@ -72,9 +76,10 @@ func main() {
 		// fmt.Println(record)
 	}
 	working += "</table>\n"
+	working += "</body>\n"
 
-	if num_args > 1 {
-		out, err := os.Create(file_out)
+	if numArgs > 1 {
+		out, err := os.Create(fileOut)
 		check(err)
 		w := bufio.NewWriter(out)
 		_, err = w.WriteString(working)
