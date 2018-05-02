@@ -38,6 +38,7 @@ func main() {
 
 	working := "<head><link rel='stylesheet' type='text/css' href='./css/dist/milligram.min.css'></head>\n"
 	working += "<body>\n"
+	working += "<div>"
 	// path := path.Base(fileIn)
 
 	// file_chunks := strings.Split(path, ".")
